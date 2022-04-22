@@ -14,5 +14,6 @@ export class AppComponent {
 
   loginUser() {
     console.log(this.logInForm.value);
+    console.log(this.logInForm);
   }
 }
