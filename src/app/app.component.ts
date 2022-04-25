@@ -13,7 +13,6 @@ import { FormGroup, FormControl } from '@angular/forms';
     <a routerLinkActive="active" 
       routerLink="/catalog">Catalog</a> 
       
-    <router-outlet></router-outlet>
   </div>
   `,
   styleUrls: ['./app.component.css'],
