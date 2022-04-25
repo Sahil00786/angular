@@ -2,7 +2,20 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
+  template: `
+  <div class="container">
+    <a routerLinkActive="active" 
+       routerLink="/login">Login</a> |
+
+    <a routerLinkActive="active" 
+       routerLink="/home">Home</a> | 
+
+    <a routerLinkActive="active" 
+      routerLink="/catalog">Catalog</a> 
+      
+    <router-outlet></router-outlet>
+  </div>
+  `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
